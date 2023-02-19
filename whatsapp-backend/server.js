@@ -10,11 +10,11 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 const pusher = new Pusher({
-  appId: "1556663",
-  key: "0eb5804495cf169f5b5f",
-  secret: "5d9db74d4b7a8307a724",
-  cluster: "eu",
-  useTLS: true,
+  appId: "",
+  key: "",
+  secret: "",
+  cluster: "",
+  useTLS: ,
 });
 
 const db = mongoose.connection;
@@ -54,7 +54,7 @@ app.use(cors());
 //DB config
 mongoose.set(`strictQuery`, true);
 const connection_url =
-  "mongodb+srv://admin:1234567890@cluster0.wdd1fgz.mongodb.net/whatsappdb?retryWrites=true&w=majority";
+  "mongodb";
 mongoose.connect(connection_url);
 
 //api routes
